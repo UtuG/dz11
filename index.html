@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dz_11</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+	<header>
+		<div class="header">
+<h1 class="header_title">Frispes.</h1>
+<ul class="header_navlist">
+<li><a class="header_navlink">Home</a>						<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+<li><a class="header_navlink">Workspace</a>					<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+<li><a class="header_navlink">Service</a>					<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+<li><a class="header_navlink">Events</a>						<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+<li><a class="header_navlink">Reviews</a>						<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+<li><a class="header_navlink">Contact Us</a>				<ul class="header_navsublist">                                                   <li><a class="header_navsublink">Home</a></li>
+																										<li><a class="header_navsublink">Workspace</a></li>
+																										<li><a class="header_navsublink">Service</a></li>
+																										<li><a class="header_navsublink">Events</a></li>
+																										<li><a class="header_navsublink">Reviews</a></li>
+																										<li><a class="header_navsublink">Contact Us</a></li> </ul></li>
+
+</ul>
+
+<a href="" class="header_login">Log In</a>
+<a href="" class="header_signup">Sign Up</a>
+</div>
+	</header>
+	<!-- ^ Блок и элементы в навигации ^ -->
+	<main>
+
+		<div class="presentation">
+<!--presentation - блок ^ -->	
+			<div class="presentation_body">
+								<!-- ^ presentation_body - элемент задающий размер и цвет всему блоку presentation. По совместительству элемент относительно  которого я позиционирую  все элементы в этом блоке. ^ -->
+								
+<div class="presentation_item">
+<div class="banner banner_settings"> <span class="presentation_span">Revolutionary</span> co-working space to realize your innovation</div></div>
+<!-- ^^^ Реализация before и after через коробку item, так-как у баннера уже абсолютная позиция, очень удобно! Так-же задан блок banner, чтоб перенести основные стили на остальные  так-как по всей странице они повторяються и почти одинаковы. Опять же, в следующих баннерах модификаторы или элементы типа banner_settings помогут стилизовать уникальные отличия, такие как позиция, отступы и т.д. Для этого и нужны миксы: строго отделить общее в блоке и уникальное задать в модификаторе или єлементе  ^^^ -->
+
+<div class="banner_item">
+<div class="message message_settings">In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</div></div>
+<!-- ^^^^^ Такие сообщения с шрифтом Lato, серым цветом и "font-weight: 400" повторяються и дальше, создаем отдельный блок message, а уникальные черты помещаем в message_settings  
+	.message_settings {
+	width: 382px;
+	height: 120px;
+	position: absolute;
+	top: 104px;
+	left: 728px;
+	line-height: 30px;
+}-->
+
+<div class="box box_settings">
+
+	<div class="box_headliner  headliner">Find your space now
+			<!-- ^^ Так-как на странице много синих блоков, со шрифтом Lato в качестве основного текста - создаем блок box а его уникальные свойства задаем в box_settings. Так-же часто в синих блоках есть заголовки со шрифтом Lora и font-weight: bold - создаем блок headliner чтоб использовать его позже, а сейчас так-же создаем элемент box_headliner для его уникальных свойст в блоке box - .box_headliner {
+	font-size: 34px;
+	line-height: 44px;
+	padding: 42px 72px 373px 40px;
+};^^ -->
+		<div class="box_headliner_inputs">
+			<form class="box_form" enctype="multipart/form-data" action="#">
+
+				<div class="box_form__input">
+				<label for="select1" class="box_label_1">Location</label>
+				<select id="select1"  name="select" class="box_input box_input_locationselect">
+					<option value="1">Malang, Indonesia</option>
+					<option value="2">Malang, Indonesia</option>
+					<option value="3">Malang, Indonesia</option>
+					<option value="4">Malang, Indonesia</option>
+					<option value="5">Malang, Indonesia</option>	
+					</select>
+				</div>
+					<div class="box_form__input">
+					<label for="select2" class="box_label_2">Type</label>
+					<select id="select2" name="select" class="box_input box_input_typeselect">
+						<option value="1">Private Office</option>
+						<option value="2">Private Office</option>
+						<option value="3">Private Office</option>
+						<option value="4">Private Office</option>
+						<option value="5">Private Office</option>	
+						</select>
+					</div>
+					
+						<div class="box_form_line">
+							<div class="box_form__input">
+								<label for="date_input" class="box_label_3">Date</label>
+								<input  required id="date_input" value="01.01.2001" class="box_input box_input_dateselect" type="date">
+					</div>
+				</div>
+				<!-- ^^^ В других синих блоках нет инпутов, по этому тут обойдемся модификатором box_headliner_inputs ^^^ -->
+					<button class="box_button"  tabindex="1" type="submit">FIND MY SPACE</button>
+				</form>
+			</form>
+		</div>
+		<img class="box_img" src="img/dz.png" alt="">
+	</div>
+
+</div>
+
+		</div></div>
+	</main>
+
+	<!-- ^^ После каждого раза когда используеться новый блок как основной, он пишеться первым словом в названии следующих элементов и модификаторов ^^ -->
+</div>
+</body>
+</html>
